@@ -1,0 +1,127 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #69bbfe;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.grid-container {
+    margin: 5% auto;
+    display: grid;
+    row-gap: 8px;
+    column-gap: 10px;
+    border-radius: 20px;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: white;
+    padding: 30px;
+}
+
+@media screen and (max-width: 2560px){
+    .grid-container{
+        max-width: 28%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        max-width: 35%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .grid-container {
+        max-width: 45%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid-container {
+        max-width: 65%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        max-width: 75%;
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .grid-container {
+        max-width: 85%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .grid-container {
+        max-width: 90%;
+        padding: 25px;
+    }
+}
+
+.grid-item {
+    background-color: #a7d2f5;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 0;
+    font-size: 30px;
+    text-align: center;
+    box-shadow: 3px 3px 5px black;
+}
+
+.grid-item:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.number{
+    background-color: #b4dbfac4;
+    color: #12456f;
+    font-weight: bold;
+    font-size: 19pt;
+}
+
+.operator{
+    background-color: #84c6fce7;
+    color: #266ca4;
+    font-weight: bold;
+    font-size: 19pt;
+}
+
+#inputElement {
+    background-color: #b8dcf9c4;
+    border-radius: 12px;
+    grid-column: 1 / span 5;
+    height: 100px;
+    margin-bottom: 3px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputValue{
+    align-self: flex-start;
+    color: #266ca4;
+    font-size: large;
+}
+
+#resultValue {
+    align-self: flex-end;
+    color: #12456f;
+    font-weight: bold;
+    font-size: 32pt;
+}
+
+.enter {
+    grid-column: 4 / span 2;
+    background-color: #266ca4;
+    color: white;
+    font-weight: bold;
+    font-size: 18pt;
+}

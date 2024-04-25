@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="inputElement">
+            <div id="inputValue"></div>
+            <div id="resultValue"></div>
+        </div>
+        <input type="button" value="(" class="grid-item operator" onclick="Add(' &#40; ')">
+        <input type="button" value=")" class="grid-item operator" onclick="Add(' &#41 ')">
+        <input type="button" value="%" class="grid-item operator" onclick="Add('%')">
+        <input type="button" value="←" class="grid-item operator" id="deleteButton">
+        <input type="button" value="AC" class="grid-item operator" id="clearButton">
+        <input type="button" value="7" class="grid-item number" onclick="Add('7')">
+        <input type="button" value="8" class="grid-item number" onclick="Add('8')">
+        <input type="button" value="9" class="grid-item number" onclick="Add('9')">
+        <input type="button" value="x&sup2;" class="grid-item operator" onclick="Add('&sup2;')">
+        <input type="button" value="x&sup3;" class="grid-item operator" onclick="Add('&sup3;')">
+        <input type="button" value="4" class="grid-item number" onclick="Add('4')">
+        <input type="button" value="5" class="grid-item number" onclick="Add('5')">
+        <input type="button" value="6" class="grid-item number" onclick="Add('6')">
+        <input type="button" value="*" class="grid-item operator" onclick="Add('*')">
+        <input type="button" value="÷" class="grid-item operator" onclick="Add('/')">
+        <input type="button" value="1" class="grid-item number" onclick="Add('1')">
+        <input type="button" value="2" class="grid-item number" onclick="Add('2')">
+        <input type="button" value="3" class="grid-item number" onclick="Add('3')">
+        <input type="button" value="+" class="grid-item operator" onclick="Add('+')">
+        <input type="button" value="-" class="grid-item operator" onclick="Add('-')">
+        <input type="button" value="00" class="grid-item number" onclick="Add('00')">
+        <input type="button" value="0" class="grid-item number" onclick="Add('0')">
+        <input type="button" value="." class="grid-item operator" onclick="Add('.')">
+        <input type="button" value="ENTER" class="grid-item enter" id="enterButton">
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
